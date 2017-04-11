@@ -1,0 +1,20 @@
+
+<div class="container">
+  <div class="row">
+    <form class="col-lg-4">
+      <p>
+        <input id="name"
+        type="text" ng-model="search.title">
+      </p>
+    </form>
+    <h3 class='col-lg-6'
+    >sort by votes</h3>
+
+    <button
+    class='col-lg-2'
+    ng-click="ShowHide()"
+    name='newPost' ng-click="$ctrl.newPost">New Post</button>
+  </div>
+  <!-- <div class="row">{{$ctrl.auntJemima}}</div> -->
+</div>
+<list-it ng-show="IsVisible"></list-it>
