@@ -24,6 +24,10 @@ var posts
             }
       vm.createNewPost = function(){
         vm.newPostForm.$setPristine();
+        vm.newPost.time = new Date ();
+        /*the lines below are commented out...I was trying to refine the date...something to come back to in the refactoriing process! */
+        // var roughTime = new Date ();
+        // vm.newPost.time = roughTime.slice(0,10);
         console.log(vm.newPost);
         console.log(vm.posts);
         vm.posts.push(vm.newPost);
@@ -41,7 +45,7 @@ var posts
         if (vm.counter > 0) {
           vm.counter--;
         }
-        
+
       }
 
 
